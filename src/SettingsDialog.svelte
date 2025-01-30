@@ -50,7 +50,7 @@
                     If the selected file does not provide the starting address,
                     this address will be used to write the code at. In most
                     cases this is the starting address of the flash memory
-                    (STM32: 0x8000000 and STM8: 0x8000).
+                    (STM32: 0x8000000).
                 </p>
             </div>
 
