@@ -1,11 +1,8 @@
 <img src='https://raw.githubusercontent.com/Gamadril/stm-serial-flasher/master/public/res/logo_128.png' width='40px' height='40px' /> Web STM Flasher (serial)
 ==================
 
-STM serial flasher is a [Web App](https://gamadril.github.io/stm-serial-flasher/)  for programming the STM controllers using the embedded ROM bootloader over a serial port. It uses Chrome's Web Serial API and works only with browsers based on Chromium like Chrome, Edge and Opera.
-The app supports STM8 and STM32 microcontrollers. Tests were done on the STM8-Discovery and STM32f4-discovery boards.
-
-The old version, which was implemented as Chrome extension can be found in the branch of this repository.
-
+STM serial flasher is a [Web App](https://cristian-o.github.io/stm-serial-flasher/)  for programming the STM controllers using the embedded ROM bootloader over a serial port. It uses Chrome's Web Serial API and works only with browsers based on Chromium like Chrome, Edge and Opera.
+The app supports STM8 and STM32 microcontrollers. 
 
 Requirements
 ------------
@@ -14,24 +11,8 @@ Latest Chromium based Browsers (Chrome, Opera, Edge). Current code base was test
 Open the [Web App](https://gamadril.github.io/stm-serial-flasher/)
 
 
-
 Device connection
 -----------------
-Connect the device to your PC using a TTL level shifter.
-
-| Device            | Host            |
-| ----------------- | --------------- |
-| GND               | GND             |
-| TX                | RX              |
-| RX                | TX              |
-| NRST              | DTR             |
-| BOOT0<sup>*</sup> | RTS<sup>*</sup> |
-
-*: for STM32 only.
-
-Make sure you choose the right USART interface of the targe since the bootloader is not listening on all USART interfaces. For STM32 microcontrollers check AN2606 for more info. 
-
-
 ## Connection of tested boards
 ### stm32f4-discovery
 | Device | Host |
@@ -42,22 +23,7 @@ Make sure you choose the right USART interface of the targe since the bootloader
 | NRST   | DTR  |
 | BOOT0  | RTS  |
 
-### stm8s-discovery
-| Device | Host |
-| ------ | ---- |
-| CN1-5  | GND  |
-| CN4-10 | RX   |
-| CN4-11 | TX   |
-| CN1-1  | DTR  |
 
-### NUCLEO-F303RE
-| Device | Host |
-| ------ | ---- |
-| GND    | GND  |
-| PA10   | TX   |
-| PA9    | RX   |
-| NRST   | DTR  |
-| BOOT0  | RTS  |
 
 3rd party components
 --------------------
