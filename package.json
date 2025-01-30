@@ -8,16 +8,6 @@
     "dev": "rollup -c -w",
     "deploy": "gh-pages -d public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://Gamadril@github.com/Gamadril/stm-serial-flasher.git"
-  },
-  "author": "Gamadril",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Gamadril/stm-serial-flasher/issues"
-  },
-  "homepage": "https://github.com/Gamadril/stm-serial-flasher#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
