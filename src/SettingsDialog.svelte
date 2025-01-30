@@ -56,18 +56,8 @@
 
             <div class="field">
                 <div class="control">
-                    <label class="checkbox">
-                        <input
-                            type="checkbox"
-                            bind:checked={settings.replyMode} /> Use Reply mode (STM8)
-                    </label>
                 </div>
                 <div class="help">
-                    <div>
-                        Some STM8 device interfaces require "reply" mode for
-                        serial communication. See UM0560 for details. Uncheck
-                        for STM32.
-                    </div>
                 </div>
             </div>
         </section>
